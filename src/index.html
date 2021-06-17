@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>VALIDACIONES FORMULARIO</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -15,10 +15,9 @@
 
   <body>
     <div class="container">
-      <!-- formulario de pago -->
       <div class="card">
         <div class="card-header">
-          <h1>Formulario de pago ejemplo</h1>
+          <h1>Formulario de pago</h1>
         </div>
         <div class="card-body">
           <form id="formulario">
@@ -29,9 +28,8 @@
             >
               Faltan algunos campos
             </div>
-            <!-- fila1 -->
+
             <div class="row">
-              <!-- Tarjeta -->
               <div class="form-group col-5">
                 <label for="Card"><b>Tarjeta #</b></label
                 ><br />
@@ -41,8 +39,6 @@
                   id="Card"
                   placeholder="XXXX-XXXX-XXXX-XXXX"
                 />
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small> -->
               </div>
               <div class="form-group col-3">
                 <label for="CVC"><b>CVC #</b></label
@@ -54,7 +50,7 @@
                   placeholder="0000"
                 />
               </div>
-              <!-- Monto -->
+
               <div class="form-group col-4">
                 <label for="Amount"><b>Monto</b></label
                 ><br />
@@ -66,10 +62,7 @@
                 />
               </div>
             </div>
-            <!-- fin fila1 -->
-            <!-- fila2 -->
             <div class="row">
-              <!-- Nombre -->
               <div class="form-group col-6">
                 <label for="name"><b>Nombre</b></label
                 ><br />
@@ -77,10 +70,10 @@
                   type="text"
                   class="form-control"
                   id="name"
-                  placeholder="Sebastian"
+                  placeholder="Nombre"
                 />
               </div>
-              <!-- Apellido -->
+
               <div class="form-group col-6">
                 <label for="apellido"><b>Apellido</b></label
                 ><br />
@@ -88,57 +81,51 @@
                   type="text"
                   class="form-control"
                   id="apellido"
-                  placeholder="Perez"
+                  placeholder="Apellido"
                 />
               </div>
             </div>
-            <!-- fin fila2 -->
-            <!-- fila3 -->
             <div class="row">
-              <!-- Pais -->
               <div class="form-group col-6">
-                <label for="pais"><b>Pais</b></label
+                <label for="pais"><b>País</b></label
                 ><br />
                 <input
                   type="text"
                   class="form-control"
                   id="pais"
-                  placeholder="Uruguay"
+                  placeholder="País"
                 />
               </div>
-              <!-- Departamento -->
+
               <div class="col-3">
                 <div class="from-group">
                   <label for="departamento"><b>Departamento</b></label>
                   <select class="custom-select" id="departamento" required>
                     <option selected disabled value="">Cambie...</option>
-                    <option>San Jose</option>
-                    <option>Montevideo</option>
-                    <option>Colonia</option>
+                    <option>Flores</option>
+                    <option>Artigas</option>
                     <option>Maldonado</option>
+                    <option>Rivera</option>
                   </select>
                   <div class="invalid-feedback">
-                    Selecione un Estado.
+                    Selecione un Departamento
                   </div>
                 </div>
               </div>
 
-              <!-- Codigo Postal -->
               <div class="form-group col-3">
-                <label for="code-post"><b>Codigo Postal</b></label
+                <label for="code-post"><b>Código Postal</b></label
                 ><br />
                 <input
                   type="text"
                   class="form-control"
                   id="code-post"
-                  placeholder="Codigo Postal"
+                  placeholder="Código Postal"
                 />
               </div>
             </div>
-            <!-- fin fila3 -->
-            <!-- fila4 -->
+
             <div class="row">
-              <!-- Check Metodo de pago -->
               <div class="form-group col-6 pl-5">
                 <div class="row">
                   <div class="form-check col-2">
@@ -195,17 +182,15 @@
                   </div>
                 </div>
               </div>
-              <!-- Fin de check metodo de pago -->
-              <!-- Mensjae -->
+
               <div class="form-group col-6">
                 <label for="msj"><b>Mensaje</b></label
                 ><br />
                 <textarea class="form-control" id="msj" rows="3"></textarea>
                 <small id="msj" class="form-text text-muted">
-                  Añada un nota aqui.
+                  Añada un nota aqui
                 </small>
               </div>
-              <!-- fin fila4 -->
             </div>
           </form>
         </div>
